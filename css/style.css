@@ -1,0 +1,65 @@
+body
+{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.first
+{
+    background-image: url(../img/camera.jpg);
+    background-size: cover;
+    padding-top: 5px;
+    height: 800px;
+    width: 100%;
+    font-size: 24px;
+    margin: auto;
+    text-align: center;
+    color: black;
+}
+.email
+{
+    margin: auto;
+    font-size: 25px;
+    height: 200px;
+    width: 100%;
+    background-color: #E0F166;
+    font-size: 25px;
+}
+footer
+{
+    padding-top: 5px;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+}
+/*Grid*/
+.rows
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    align-content: center;
+}
+/*Utilities*/
+
+input[type="button"]
+{
+    height: 36px;
+    width: 12%;
+    background-color: yellow;
+    color: black;
+    border: none;
+    transition: 0.4s;
+}
+
+input[type="button"]:hover
+{
+    height: 36px;
+    width: 12%;
+    background-color: black;
+    color: white;
+    border: none;
+    transition: 0.4s;
+}
+
+
