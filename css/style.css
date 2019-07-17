@@ -4,23 +4,36 @@ body
     font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
+header #logo
+{
+    float: left;
+}
+header #logo h1
+{
+    margin: 0;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 25px;
+}
 .first
 {
     background-image: url(../img/camera.jpg);
     background-size: cover;
-    padding-top: 5px;
     height: 800px;
+    display: inline-block;
     width: 100%;
     font-size: 24px;
     margin: auto;
     text-align: center;
     color: black;
+    border-bottom: 2px solid black;
 }
 .email
 {
+    padding-top: 3px;
     margin: auto;
     font-size: 25px;
-    height: 200px;
+    height: 240px;
     width: 100%;
     background-color: #E0F166;
     font-size: 25px;
@@ -31,6 +44,8 @@ footer
     height: 100px;
     width: 100%;
     background-color: black;
+    color: white;
+    text-align: center;
 }
 /*Grid*/
 .rows
@@ -41,7 +56,6 @@ footer
     align-content: center;
 }
 /*Utilities*/
-
 input[type="button"]
 {
     height: 36px;
@@ -51,13 +65,12 @@ input[type="button"]
     border: none;
     transition: 0.4s;
 }
-
 input[type="button"]:hover
 {
     height: 36px;
     width: 12%;
-    background-color: black;
-    color: white;
+    background-color: yellow;
+    color: black;
     border: none;
     transition: 0.4s;
 }

@@ -1,0 +1,20 @@
+body
+{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.package
+{   
+    display: inline-block;
+    height: 760px;
+    width: 100%;
+}
+footer
+{
+    display: inline-block;
+    padding-top: 5px;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+}
