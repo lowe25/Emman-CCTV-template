@@ -2,17 +2,28 @@ body
 {
     margin: auto;
 }
+
+header #logo
+{
+    float: left;
+}
+header #logo h1
+{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 25px;
+}
 header 
 {
-    min-height: 50px;
-    background-color: #E5E838;
-    color: black;
-    border-bottom: 2px solid black;
+    min-height: 60px;
+    background-color: #132E77;
+    color: #ffffff;
+    border-bottom: 2px solid #132E77;
 }
 header a
 {
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: #ffffff;
     text-decoration: none;
     font-size: 24px;
 }
@@ -28,11 +39,11 @@ header li
     padding: 0 25px 0 25px;
 }
 header nav{
-    padding-top: 15px;
+    padding-top: 20px;
     float: right;
     padding-right: 10px;
 }
 header a:hover
 {
-    color:white;
+    color:yellow;
 }
