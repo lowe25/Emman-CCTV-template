@@ -6,6 +6,7 @@ body
 header #logo
 {
     float: left;
+    padding-left: -50px;
 }
 header #logo h1
 {
@@ -33,7 +34,7 @@ header
 header ul
 {
     margin: 0;
-    padding: 0;
+    padding-left: 25px;
     overflow: hidden;
     list-style: none;
 }
@@ -44,8 +45,9 @@ header li a
     color: #ffffff;
     text-decoration: none;
     font-size: 24px;
-   
+    line-height: 1.6;
 }
+
 /*header nav{
     padding-top: 20px;
     float: right;
@@ -67,7 +69,6 @@ header .menu
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
-
 }
 header .menu-icon {
     cursor: pointer;
@@ -133,7 +134,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after
 {
   top: 0;
 }
-@media (min-width: 48em)
+@media (min-width: 40em)
 {
     header li
     {
@@ -142,7 +143,6 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after
     header li a
     {
         padding: 20px 30px;
-
     }
     header .menu
     {

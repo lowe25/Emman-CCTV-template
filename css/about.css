@@ -83,6 +83,20 @@ footer
     width: 100%;
     background-color: black;
 }
+
+/*Media Query*/
+@media (max-width: 760px)
+{
+    .services
+    {
+        height: 1100px;
+    }
+    .rows1
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
 /*
  <p>EmmanCCTV Services was founded on April 9 2018 at 022 Sitio Kanluran, Brgy. Palaypalay
                             Jala-jala.  By John Emmanuel Gardon  serving as an CCTV installation service and computer 

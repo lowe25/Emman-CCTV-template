@@ -98,5 +98,18 @@ input[type="button"]:hover
     border: none;
     transition: 0.4s;
 }
+@media (max-width: 760px)
+{
+.email
+{
+    height: 600px;
+}
+.rows
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    line-height: 2.3;
+}
+}
 
 
