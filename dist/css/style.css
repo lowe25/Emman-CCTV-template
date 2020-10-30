@@ -1,0 +1,129 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  height: 3.5rem;
+  background-color: #132E77;
+}
+
+header .company {
+  color: #ffffff;
+  float: left;
+  margin: 0;
+  padding-top: 1.25rem;
+  margin-left: 1.56rem;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1.25rem;
+}
+
+header a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header a:hover {
+  color: yellow;
+  border-bottom: 2px solid yellow;
+}
+
+header li {
+  padding: 0 1.56rem 0 1.25rem;
+}
+
+footer {
+  height: 103px;
+  color: #ffffff;
+  background-color: black;
+  padding: 5.7px;
+}
+
+.copyright {
+  font-size: 14px;
+  height: 25px;
+  border-top: 1px solid white;
+  padding-top: 10px;
+  text-align: center;
+  background-color: grey;
+  color: #ffffff;
+}
+
+.about {
+  height: 400px;
+  width: 100%;
+  background-image: url(../img/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 2px solid black;
+  color: #ffffff;
+}
+
+.about .dunno {
+  text-align: center;
+  padding-top: 250px;
+}
+
+.served {
+  margin: 20px;
+  text-align: center;
+}
+
+.customers {
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+article {
+  height: 200px;
+  width: 400px;
+  border: 2px solid black;
+}
+
+.inquire {
+  height: 108px;
+  display: grid;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.inquire .inq {
+  height: 45px;
+  width: 140px;
+}
+
+.inquire a {
+  text-decoration: none;
+  color: black;
+}
+
+.services-intro {
+  height: 400px;
+  background-color: black;
+  color: #f4f4f4;
+}
+
+.services-intro h2 {
+  padding: 170px 0px 0px 90px;
+}
+
+.services {
+  height: 500px;
+  display: grid;
+  justify-content: center;
+  gap: 15px;
+  grid-template-columns: repeat(3, auto);
+  padding-top: 50px;
+}
+/*# sourceMappingURL=style.css.map */

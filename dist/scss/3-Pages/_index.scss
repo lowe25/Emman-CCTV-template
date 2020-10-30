@@ -1,0 +1,51 @@
+.about {
+  height: 400px;
+  width: 100%;
+  background-image: url(../img/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 2px solid black;
+  color: $font-color;
+  .dunno {
+    text-align: center;
+    padding-top: 250px;
+  }
+}
+
+
+//Customer Served
+.served {
+  margin: 20px;
+  text-align: center;
+}
+.customers {
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+article {
+  height: 200px;
+  width: 400px;
+  border: 2px solid black;
+}
+
+//Inquire
+.inquire{
+    height: 108px;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 15px;
+
+    .inq{
+        height: 45px;
+        width: 140px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
