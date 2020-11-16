@@ -1,0 +1,15 @@
+#btn-send{
+    height: 50px;
+    width: 160px;
+    color: $font-color;
+    background-color: #2874A6;
+    border: none;
+}
+@mixin home-cta {
+    height: 45px;
+    width: 150px;
+    color: $font-color;
+    border: none;
+    background-color: #020405;
+}
+

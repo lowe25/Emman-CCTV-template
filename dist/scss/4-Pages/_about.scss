@@ -1,0 +1,58 @@
+.about-container {
+  height: 516px;
+  display: flex;
+  justify-content: center;
+}
+
+.client-heading {
+  text-align: center;
+  padding: 30px 0 15px 0;
+}
+.clients-tab {
+  //638
+  height: 252px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 15px;
+  justify-content: center;
+
+  .client1,
+  .client2,
+  .client3 {
+    @extend .boxes;
+    @extend .img-property;
+  }
+
+  .client1 {
+    background-image: url(../img/generics.png);
+  }
+  .client2 {
+    background-image: url(../img/tv5.png);
+  }
+  .client3 {
+    background-image: url(../img/water.png);
+  }
+}
+
+/*Media Queries*/
+@include mobile{
+  .about-container{
+    height: 300px;
+  }
+
+  .clients-tab{
+    height: 800px;
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+@include tablet{
+  .about-container{
+    height: 400px;
+  }
+
+  .clients-tab{
+    height: 700px;
+    grid-template-columns: repeat(1, auto);
+  }
+}

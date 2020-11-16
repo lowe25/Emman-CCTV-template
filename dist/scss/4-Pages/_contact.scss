@@ -1,0 +1,106 @@
+.contact-container {
+  height: 12.5rem;
+  background-color: #1c2833;
+  text-align: center;
+  h2 {
+    padding: 20px;
+    color: $font-color;
+  }
+}
+
+.contact-form {
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  background-color: #fdfefe;
+
+  //Textbox
+  .txt-fields {
+    display: inline-block;
+  }
+
+  //Textarea
+  .txt-area {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    display: block;
+  }
+}
+
+//Contacts
+.office {
+  height: 320px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  justify-content: center;
+}
+
+.box1,
+.box2 {
+  @extend .boxes;
+  p {
+    font-size: 15px;
+    padding: 10px;
+  }
+  h3 {
+    padding: 10px;
+  }
+
+  .fas {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/*Media Query*/
+/*For Mobile*/
+@include mobile {
+  .contact-container{
+   height: 245px;
+  }
+
+  .contact-form {
+    height: 400px;
+  }
+
+  .txt-fields,
+  .txt-area,.btn-class {
+    padding: 10px;
+  }
+
+  .office {
+    height: 550px;
+    padding-top: 100px;
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .box1,
+  .box2 {
+    width: 310px;
+  }
+}
+
+/*For Tablet  */
+@include tablet {
+  .contact-form {
+    height: 500px;
+  }
+  .txt-fields,
+  .txt-area,.btn-class {
+    padding: 10px;
+  }
+
+  .office {
+    height: 450px;
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+@include tablet-lg{
+  .office{
+    height: 460px;
+    grid-template-columns: repeat(1,auto);
+  }
+}

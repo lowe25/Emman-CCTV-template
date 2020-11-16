@@ -1,15 +1,105 @@
+/*Media Query*/
+.img-property, .clients-tab .client1,
+.clients-tab .client2,
+.clients-tab .client3 {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+.boxes, .clients-tab .client1,
+.clients-tab .client2,
+.clients-tab .client3, .box1,
+.box2 {
+  height: 200px;
+  width: 400px;
+  border: 1px solid black;
+}
+
+.boxes-about {
+  height: 170px;
+  width: 1100px;
+  border: 1px solid black;
+}
+
+/*Media Queries*/
+@media (min-width: 320px) and (max-width: 600px) {
+  .boxes, .clients-tab .client1,
+  .clients-tab .client2,
+  .clients-tab .client3, .box1,
+  .box2 {
+    height: 200px;
+    width: 280px;
+    border: 1px solid black;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .boxes, .clients-tab .client1,
+  .clients-tab .client2,
+  .clients-tab .client3, .box1,
+  .box2 {
+    height: 200px;
+    width: 500px;
+    border: 1px solid black;
+  }
+}
+
+#btn-send {
+  height: 50px;
+  width: 160px;
+  color: #ffffff;
+  background-color: #2874A6;
+  border: none;
+}
+
+#txt {
+  height: 35px;
+  width: 100%;
+  resize: vertical;
+}
+
+#txt::placeholder {
+  padding: 10px;
+}
+
+#txt-msg {
+  width: 100%;
+  resize: none;
+}
+
+#txt-msg::placeholder {
+  margin: 10px;
+  padding: 10px;
+}
+
+/*Media Query*/
+@media (min-width: 320px) and (max-width: 600px) {
+  .txt-fields, .txt-area {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .txt-fields, .txt-area {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.navbar {
   height: 3.5rem;
   background-color: #132E77;
 }
 
-header .company {
+.navbar .company {
   color: #ffffff;
   float: left;
   margin: 0;
@@ -17,113 +107,281 @@ header .company {
   margin-left: 1.56rem;
 }
 
-header ul {
+.navbar ul {
   list-style: none;
-  display: flex;
-  justify-content: flex-end;
+  float: right;
   padding-top: 1.25rem;
 }
 
-header a {
+.navbar li {
+  display: inline-block;
+  padding: 0 1.56rem 0 1.25rem;
+}
+
+.navbar a {
   text-decoration: none;
   color: #ffffff;
 }
 
-header a:hover {
+.navbar a:hover {
   color: yellow;
   border-bottom: 2px solid yellow;
 }
 
-header li {
-  padding: 0 1.56rem 0 1.25rem;
+@media (min-width: 320px) and (max-width: 600px) {
+  .navbar ul {
+    display: none;
+  }
 }
 
-footer {
-  height: 103px;
+@media (min-width: 600px) and (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+}
+
+.footer {
+  height: 40px;
   color: #ffffff;
   background-color: black;
   padding: 5.7px;
-}
-
-.copyright {
-  font-size: 14px;
-  height: 25px;
-  border-top: 1px solid white;
   padding-top: 10px;
+  font-size: 0.87rem;
+  border-top: 0.06rem solid white;
   text-align: center;
   background-color: grey;
   color: #ffffff;
 }
 
-.about {
-  height: 400px;
-  width: 100%;
-  background-image: url(../img/home.jpg);
+.main {
+  height: 100vh;
+  background-image: url(../img/betlog.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom: 2px solid black;
+  background-position: center;
+}
+
+.gago {
+  padding-top: 200px;
+  text-align: center;
   color: #ffffff;
+  font-size: 26px;
 }
 
-.about .dunno {
+.gago h2, .gago p {
+  margin: 10px;
+}
+
+.gago .btn-home {
+  height: 45px;
+  width: 150px;
+  color: #ffffff;
+  border: none;
+  background-color: #020405;
+}
+
+.about-container {
+  height: 516px;
+  display: flex;
+  justify-content: center;
+}
+
+.client-heading {
   text-align: center;
-  padding-top: 250px;
+  padding: 30px 0 15px 0;
 }
 
-.served {
-  margin: 20px;
-  text-align: center;
-}
-
-.customers {
-  height: 200px;
+.clients-tab {
+  height: 252px;
   display: grid;
   grid-template-columns: repeat(3, auto);
+  gap: 15px;
   justify-content: center;
-  gap: 20px;
-  margin-bottom: 40px;
 }
 
-article {
-  height: 200px;
-  width: 400px;
-  border: 2px solid black;
+.clients-tab .client1 {
+  background-image: url(../img/generics.png);
 }
 
-.inquire {
-  height: 108px;
-  display: grid;
-  justify-content: center;
-  margin-bottom: 20px;
-  border-radius: 15px;
+.clients-tab .client2 {
+  background-image: url(../img/tv5.png);
 }
 
-.inquire .inq {
-  height: 45px;
-  width: 140px;
+.clients-tab .client3 {
+  background-image: url(../img/water.png);
 }
 
-.inquire a {
-  text-decoration: none;
-  color: black;
+/*Media Queries*/
+@media (min-width: 320px) and (max-width: 600px) {
+  .about-container {
+    height: 300px;
+  }
+  .clients-tab {
+    height: 800px;
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .about-container {
+    height: 400px;
+  }
+  .clients-tab {
+    height: 700px;
+    grid-template-columns: repeat(1, auto);
+  }
 }
 
 .services-intro {
-  height: 400px;
-  background-color: black;
+  height: 25rem;
+  width: 100%;
   color: #f4f4f4;
+  background-image: url(../img/services.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .services-intro h2 {
-  padding: 170px 0px 0px 90px;
+  font-size: 3.125rem;
 }
 
 .services {
-  height: 500px;
+  height: 31.25rem;
   display: grid;
-  justify-content: center;
-  gap: 15px;
   grid-template-columns: repeat(3, auto);
-  padding-top: 50px;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 35px;
+}
+
+.fas {
+  padding: 30px 0 30px 0;
+}
+
+/*Media Queries*/
+@media (min-width: 320px) and (max-width: 600px) {
+  .services {
+    height: 1500px;
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .services {
+    height: 1500px;
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1261px) {
+  .services {
+    height: 720px;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+.contact-container {
+  height: 12.5rem;
+  background-color: #1c2833;
+  text-align: center;
+}
+
+.contact-container h2 {
+  padding: 20px;
+  color: #ffffff;
+}
+
+.contact-form {
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  background-color: #fdfefe;
+}
+
+.contact-form .txt-fields {
+  display: inline-block;
+}
+
+.contact-form .txt-area {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  display: block;
+}
+
+.office {
+  height: 320px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  justify-content: center;
+}
+
+.box1 p,
+.box2 p {
+  font-size: 15px;
+  padding: 10px;
+}
+
+.box1 h3,
+.box2 h3 {
+  padding: 10px;
+}
+
+.box1 .fas,
+.box2 .fas {
+  padding: 0;
+  margin: 0;
+}
+
+/*Media Query*/
+/*For Mobile*/
+@media (min-width: 320px) and (max-width: 600px) {
+  .contact-container {
+    height: 245px;
+  }
+  .contact-form {
+    height: 400px;
+  }
+  .txt-fields,
+  .txt-area, .btn-class {
+    padding: 10px;
+  }
+  .office {
+    height: 550px;
+    padding-top: 100px;
+    grid-template-columns: repeat(1, auto);
+  }
+  .box1,
+  .box2 {
+    width: 310px;
+  }
+}
+
+/*For Tablet  */
+@media (min-width: 600px) and (max-width: 768px) {
+  .contact-form {
+    height: 500px;
+  }
+  .txt-fields,
+  .txt-area, .btn-class {
+    padding: 10px;
+  }
+  .office {
+    height: 450px;
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1261px) {
+  .office {
+    height: 460px;
+    grid-template-columns: repeat(1, auto);
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,14 +1,11 @@
-footer{
-    height: 103px;
+.footer{
+    height: 40px;
     color: $font-color;
     background-color: black;
     padding:5.7px;
-}
-.copyright{
-    font-size: 14px;
-    height: 25px;
-    border-top: 1px solid white;
     padding-top: 10px;
+    font-size: 0.87rem;
+    border-top: 0.06rem solid white;
     text-align: center;
     background-color: grey;
     color: $font-color;

@@ -1,0 +1,53 @@
+.services-intro {
+  height: 25rem;
+  width: 100%;
+  color: #f4f4f4;
+  background-image: url(../img/services.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-size: 3.125rem;
+  }
+}
+
+.services {
+  //490px
+  height: 31.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 35px;
+}
+
+//ICONS
+.fas {
+  padding: 30px 0 30px 0;
+}
+
+/*Media Queries*/
+@include mobile{
+  .services{
+   height: 1500px;
+   @include grids;
+  }
+}
+
+@include tablet {
+  .services {
+    height: 1500px;
+    @include grids;
+  }
+}
+
+@include tablet-lg{
+  .services{
+    height: 720px;
+    grid-template-columns: repeat(2,auto);
+  }
+}

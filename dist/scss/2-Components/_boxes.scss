@@ -1,0 +1,28 @@
+.boxes{
+    height: 200px;
+    width: 400px;
+    border: 1px solid black;
+}
+.boxes-about{
+    height: 170px;
+    width: 1100px;
+    border: 1px solid black;
+}
+
+
+/*Media Queries*/
+@include mobile{
+   .boxes{
+    height: 200px;
+    width: 280px;
+    border: 1px solid black; 
+   }
+}
+
+@include tablet{
+    .boxes{
+        height: 200px;
+        width: 500px;
+        border: 1px solid black; 
+    }
+}

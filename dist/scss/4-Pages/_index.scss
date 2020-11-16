@@ -1,0 +1,21 @@
+.main{
+height: 100vh;
+background-image: url(../img/betlog.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.gago{
+    padding-top: 200px;
+    text-align: center;
+    color: $font-color;
+    font-size: 26px;
+    h2, p{
+        margin: 10px;
+    }
+    .btn-home{
+        @include home-cta;
+    }
+}
+
