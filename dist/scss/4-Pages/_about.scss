@@ -2,6 +2,7 @@
   height: 516px;
   display: flex;
   justify-content: center;
+  border-bottom: 2px solid black;
 }
 
 .client-heading {
@@ -9,8 +10,8 @@
   padding: 30px 0 15px 0;
 }
 .clients-tab {
-  //638
-  height: 252px;
+  //258px
+  height: 258px;
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: 15px;

@@ -1,0 +1,69 @@
+/*Media Querys*/
+/*Screen Breakpoints*/
+$mobile-sm: 320px;
+$mobile-md: 600px;
+$tablet-sm: 768px;
+$tablet-lg: 1024px;
+//1261
+
+/*Media Query Diff Screens*/
+@mixin mobile {
+  @media (min-width: $mobile-sm) and(max-width:$mobile-md) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $mobile-md) and (max-width: $tablet-sm) {
+    @content;
+  }
+}
+
+@mixin tablet-lg {
+  @media (min-width: 769px) and (max-width: 1261px) {
+    @content;
+  }
+}
+
+/*Navbar*/
+@mixin nav {
+  .toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+
+    ul {
+      flex-direction: column;
+    }
+
+    li {
+      //justify-content: flex-start;
+    }
+
+    a {
+      // padding: 0.5rem 1rem;
+    }
+  }
+  .nav-links.active {
+    display: flex;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@mixin grids {
+  grid-template-columns: repeat(1, auto);
+}
+
+@mixin test {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}

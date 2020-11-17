@@ -1,16 +1,20 @@
-@import '../scss/5-Utilities/mixins';
-@import '../scss/1-Base/helpers';
-@import '../scss/1-Base/colors';
-@import '../scss/1-Base/fonts';
+/*Utilities*/
+@import '../scss/1-Utilities/colors';
+@import '../scss/1-Utilities/fonts';
+@import '../scss/1-Utilities/mixins';
+@import '../scss/1-Utilities/helpers';
 
+/*Components*/
 @import '../scss/2-Components/boxes';
 @import '../scss/2-Components/buttons';
 @import '../scss/2-Components/textbox';
 
+/*Layouts*/
 @import '../scss/3-Layout/navbar';
 @import '../scss/3-Layout/footer';
 
+/*Pages*/
 @import '../scss/4-Pages/index';
 @import '../scss/4-Pages/about';
-@import '../scss/4-Pages/services';
 @import '../scss/4-Pages/contact';
+@import '../scss/4-Pages/services';
