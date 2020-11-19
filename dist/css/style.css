@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Utilities*/
 * {
   margin: 0px;
@@ -8,6 +9,13 @@
 
 /*Media Querys*/
 /*Screen Breakpoints*/
+/*Notes
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
 /*Media Query Diff Screens*/
 /*Navbar*/
 .img-property, .clients-tab .client1,
@@ -35,7 +43,7 @@
 }
 
 /*Media Queries*/
-@media (min-width: 320px) and (max-width: 600px) {
+@media all and (max-width: 480px) {
   .boxes, .clients-tab .client1,
   .clients-tab .client2,
   .clients-tab .client3, .box1,
@@ -46,13 +54,24 @@
   }
 }
 
-@media (min-width: 600px) and (max-width: 768px) {
+@media all and (min-width: 481px) and (max-width: 768px) {
   .boxes, .clients-tab .client1,
   .clients-tab .client2,
   .clients-tab .client3, .box1,
   .box2 {
     height: 200px;
-    width: 500px;
+    max-width: 500px;
+    border: 1px solid black;
+  }
+}
+
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .boxes, .clients-tab .client1,
+  .clients-tab .client2,
+  .clients-tab .client3, .box1,
+  .box2 {
+    height: 200px;
+    max-width: 340px;
     border: 1px solid black;
   }
 }
@@ -86,13 +105,13 @@
 }
 
 /*Media Query*/
-@media (min-width: 320px) and (max-width: 600px) {
+@media all and (max-width: 480px) {
   .txt-fields, .txt-area {
     width: 100%;
   }
 }
 
-@media (min-width: 600px) and (max-width: 768px) {
+@media all and (min-width: 481px) and (max-width: 768px) {
   .txt-fields, .txt-area {
     width: 100%;
     padding: 10px;
@@ -101,22 +120,21 @@
 
 /*Layouts*/
 .navbar {
-  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   background-color: #132E77;
-  color: white;
 }
 
-.navbar .company {
-  font-size: 1.5rem;
-  margin: 0.5rem;
+.navbar .company-name {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px;
+  margin-right: auto;
 }
 
 .navbar ul {
   display: flex;
-  margin: 0;
-  padding: 0;
 }
 
 .navbar li {
@@ -124,12 +142,12 @@
   padding: 1rem;
 }
 
-.navbar a {
+.navbar .links {
   text-decoration: none;
   color: #ffffff;
 }
 
-.navbar a:hover {
+.navbar .links:hover {
   color: yellow;
   border-bottom: 2px solid yellow;
 }
@@ -151,7 +169,7 @@
   background-color: white;
 }
 
-@media (min-width: 320px) and (max-width: 600px) {
+@media all and (max-width: 480px) {
   .toggle {
     display: flex;
   }
@@ -163,7 +181,7 @@
     flex-direction: column;
   }
   .nav-links.active {
-    display: flex;
+    display: block;
   }
   .navbar {
     display: flex;
@@ -172,7 +190,7 @@
   }
 }
 
-@media (min-width: 600px) and (max-width: 768px) {
+@media all and (min-width: 481px) and (max-width: 768px) {
   .toggle {
     display: flex;
   }
@@ -184,7 +202,7 @@
     flex-direction: column;
   }
   .nav-links.active {
-    display: flex;
+    display: block;
   }
   .navbar {
     display: flex;
@@ -267,7 +285,7 @@
 }
 
 /*Media Queries*/
-@media (min-width: 320px) and (max-width: 600px) {
+@media all and (max-width: 480px) {
   .about-container {
     height: 300px;
   }
@@ -277,7 +295,7 @@
   }
 }
 
-@media (min-width: 600px) and (max-width: 768px) {
+@media all and (min-width: 481px) and (max-width: 768px) {
   .about-container {
     height: 400px;
   }
@@ -343,7 +361,7 @@
 
 /*Media Query*/
 /*For Mobile*/
-@media (min-width: 320px) and (max-width: 600px) {
+@media all and (max-width: 480px) {
   .contact-container {
     height: 245px;
   }
@@ -366,7 +384,7 @@
 }
 
 /*For Tablet  */
-@media (min-width: 600px) and (max-width: 768px) {
+@media all and (min-width: 481px) and (max-width: 768px) {
   .contact-form {
     height: 500px;
   }
@@ -380,7 +398,7 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1261px) {
+@media all and (min-width: 769px) and (max-width: 1024px) {
   .office {
     height: 460px;
     grid-template-columns: repeat(1, auto);
@@ -419,23 +437,33 @@
 }
 
 /*Media Queries*/
-@media (min-width: 320px) and (max-width: 600px) {
+@media all and (max-width: 480px) {
   .services {
     height: 1500px;
     grid-template-columns: repeat(1, auto);
   }
 }
 
-@media (min-width: 600px) and (max-width: 768px) {
+@media all and (min-width: 481px) and (max-width: 768px) {
   .services {
+    font-size: 14px;
     height: 1500px;
     grid-template-columns: repeat(1, auto);
   }
 }
 
-@media (min-width: 769px) and (max-width: 1261px) {
+@media all and (min-width: 769px) and (max-width: 1024px) {
   .services {
+    font-size: 14px;
     height: 880px;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media all and (min-width: 1025px) and (max-width: 1200px) {
+  .services {
+    font-size: 14px;
+    height: 789px;
     grid-template-columns: repeat(2, auto);
   }
 }

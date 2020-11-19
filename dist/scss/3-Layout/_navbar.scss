@@ -1,29 +1,29 @@
 .navbar {
   //height: 3.5rem;
-  position: relative;
   display: flex;
-  justify-content:space-between;
+  justify-content: center;
+  align-items: center;
   background-color: $nav-bg-color;
-  color: white;
 
-  .company {
-    font-size: 1.5rem;
-    margin: 0.5rem;
+  .company-name {
+    text-decoration: none;
+    color: $font-color;
+    padding: 15px;
+    margin-right: auto;
   }
   ul {
     display: flex;
-    margin: 0;
-    padding: 0;
+
   }
   li {
     list-style: none;
     padding: 1rem;
   }
-  a {
+  .links {
     text-decoration: none;
     color: $font-color;
   }
-  a:hover {
+  .links:hover {
     color: $hover-color;
     border-bottom: 2px solid yellow;
   }

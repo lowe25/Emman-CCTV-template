@@ -40,6 +40,7 @@
 
 @include tablet {
   .services {
+    font-size: 14px;
     height: 1500px;
     @include grids;
   }
@@ -47,7 +48,16 @@
 
 @include tablet-lg{
   .services{
+    font-size: 14px;
     height: 880px;
+    grid-template-columns: repeat(2,auto);
+  }
+}
+
+@include desktop{
+  .services{
+    font-size: 14px;
+    height: 789px;
     grid-template-columns: repeat(2,auto);
   }
 }

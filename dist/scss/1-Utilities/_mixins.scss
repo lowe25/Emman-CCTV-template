@@ -1,29 +1,53 @@
 /*Media Querys*/
 /*Screen Breakpoints*/
+/*Notes
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+
 $mobile-sm: 320px;
-$mobile-md: 600px;
-$tablet-sm: 768px;
-$tablet-lg: 1024px;
+$mobile-md: 480px;
+
+$tablet-sm: 481px;
+$tablet-md: 768px;
+
+$screen-sm: 769px;
+$screen-md: 1024px;
+
+$screen-lg: 1025px;
+$screen-xl: 1200px;
+
+
 //1261
 
 /*Media Query Diff Screens*/
 @mixin mobile {
-  @media (min-width: $mobile-sm) and(max-width:$mobile-md) {
+  @media all and (max-width: $mobile-md) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media (min-width: $mobile-md) and (max-width: $tablet-sm) {
+  @media all and (min-width: $tablet-sm) and (max-width: $tablet-md) {
     @content;
   }
 }
 
 @mixin tablet-lg {
-  @media (min-width: 769px) and (max-width: 1261px) {
+  @media all and (min-width: $screen-sm) and (max-width: $screen-md) {
     @content;
   }
 }
+
+@mixin desktop {
+  @media all and (min-width: $screen-lg) and (max-width: $screen-xl){
+    @content;
+  }
+}
+
 
 /*Navbar*/
 @mixin nav {
@@ -38,17 +62,9 @@ $tablet-lg: 1024px;
     ul {
       flex-direction: column;
     }
-
-    li {
-      //justify-content: flex-start;
-    }
-
-    a {
-      // padding: 0.5rem 1rem;
-    }
   }
   .nav-links.active {
-    display: flex;
+    display: block;
   }
 
   .navbar {

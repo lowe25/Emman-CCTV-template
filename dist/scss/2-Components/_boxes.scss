@@ -22,7 +22,15 @@
 @include tablet{
     .boxes{
         height: 200px;
-        width: 500px;
+        max-width: 500px;
+        border: 1px solid black; 
+    }
+}
+
+@include tablet-lg{
+    .boxes{
+        height: 200px;
+        max-width: 340px;
         border: 1px solid black; 
     }
 }
