@@ -23,3 +23,10 @@
   }
 }
 
+@include small-screens(screen-sm, screen-md){
+  .boxes{
+    width: 330px;
+    padding: 10px;
+    }
+}
+

@@ -16,7 +16,7 @@ $screen-sizes: (
   "screen-sm": 769px,
   "screen-md": 1024px,
   "screen-lg": 1025px,
-  "screen-xl": 1200px,
+  "screen-xl": 1270px,
 );
 
 /*Media Query Diff Screens Portrait*/
@@ -33,6 +33,12 @@ $screen-sizes: (
 }
 
 @mixin small-screens($screen1, $screen2){
+  @media (min-width: map-get($screen-sizes, $screen1)) and (max-width:map-get($screen-sizes, $screen2)){
+    @content;
+  }
+}
+
+@mixin desktop-screens($screen1, $screen2){
   @media (min-width: map-get($screen-sizes, $screen1)) and (max-width:map-get($screen-sizes, $screen2)){
     @content;
   }
@@ -70,6 +76,10 @@ $screen-sizes: (
 
 @mixin grids {
   grid-template-columns: repeat(1, auto);
+}
+
+@mixin grid-col {
+  grid-template-columns: repeat(2,auto);
 }
 
 @mixin test {
