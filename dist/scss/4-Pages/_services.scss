@@ -30,34 +30,24 @@
   padding: 30px 0 30px 0;
 }
 
-/*Media Queries*/
-@include mobile{
-  .services{
-   height: 1500px;
-   @include grids;
+/*Media Queries Mobile*/
+@include mobile-device(mobile) {
+  .services-intro {
+    h2 {
+      font-size: 27px;
+    }
   }
-}
-
-@include tablet {
   .services {
-    font-size: 14px;
-    height: 1500px;
+    height: 1370px;
+    max-width: 100%;
+    font-size: 18px;
     @include grids;
   }
 }
 
-@include tablet-lg{
-  .services{
-    font-size: 14px;
-    height: 880px;
-    grid-template-columns: repeat(2,auto);
-  }
+@include tablet-device(tablet-sm,tablet-md){
+.services{
+  height: 1380px;
+  @include grids;
 }
-
-@include desktop{
-  .services{
-    font-size: 14px;
-    height: 789px;
-    grid-template-columns: repeat(2,auto);
-  }
 }

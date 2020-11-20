@@ -16,7 +16,9 @@
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV
 */
-/*Media Query Diff Screens*/
+/*Map of Screen Sizes*/
+/*Media Query Diff Screens Portrait*/
+/*Media Query Diff Screens Landscape*/
 /*Navbar*/
 .img-property, .clients-tab .client1,
 .clients-tab .client2,
@@ -43,36 +45,22 @@
 }
 
 /*Media Queries*/
-@media all and (max-width: 480px) {
+@media (max-width: 480px) {
   .boxes, .clients-tab .client1,
   .clients-tab .client2,
   .clients-tab .client3, .box1,
   .box2 {
-    height: 200px;
-    width: 280px;
-    border: 1px solid black;
+    width: 300px;
   }
 }
 
-@media all and (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .boxes, .clients-tab .client1,
   .clients-tab .client2,
   .clients-tab .client3, .box1,
   .box2 {
-    height: 200px;
-    max-width: 500px;
-    border: 1px solid black;
-  }
-}
-
-@media all and (min-width: 769px) and (max-width: 1024px) {
-  .boxes, .clients-tab .client1,
-  .clients-tab .client2,
-  .clients-tab .client3, .box1,
-  .box2 {
-    height: 200px;
-    max-width: 340px;
-    border: 1px solid black;
+    width: 400px;
+    padding: 10px;
   }
 }
 
@@ -104,20 +92,20 @@
   padding: 10px;
 }
 
-/*Media Query*/
-@media all and (max-width: 480px) {
-  .txt-fields, .txt-area {
-    width: 100%;
-  }
+/*Media Query*
+@include mobile(mobile-md) {
+.txt-fields,.txt-area{
+  width: 100%;
+  padding: 10px;
 }
-
-@media all and (min-width: 481px) and (max-width: 768px) {
-  .txt-fields, .txt-area {
+}
+@include tablet(tablet-sm, tablet-md) {
+  .txt-fields,.txt-area{
     width: 100%;
     padding: 10px;
   }
 }
-
+*/
 /*Layouts*/
 .navbar {
   display: flex;
@@ -169,28 +157,8 @@
   background-color: white;
 }
 
-@media all and (max-width: 480px) {
-  .toggle {
-    display: flex;
-  }
-  .nav-links {
-    display: none;
-    width: 100%;
-  }
-  .nav-links ul {
-    flex-direction: column;
-  }
-  .nav-links.active {
-    display: block;
-  }
-  .navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-@media all and (min-width: 481px) and (max-width: 768px) {
+/*Media Query Mobile*/
+@media (min-width: 0px) and (max-width: 1024px) {
   .toggle {
     display: flex;
   }
@@ -285,26 +253,6 @@
 }
 
 /*Media Queries*/
-@media all and (max-width: 480px) {
-  .about-container {
-    height: 300px;
-  }
-  .clients-tab {
-    height: 800px;
-    grid-template-columns: repeat(1, auto);
-  }
-}
-
-@media all and (min-width: 481px) and (max-width: 768px) {
-  .about-container {
-    height: 400px;
-  }
-  .clients-tab {
-    height: 700px;
-    grid-template-columns: repeat(1, auto);
-  }
-}
-
 .contact-container {
   height: 12.5rem;
   background-color: #1c2833;
@@ -361,50 +309,6 @@
 
 /*Media Query*/
 /*For Mobile*/
-@media all and (max-width: 480px) {
-  .contact-container {
-    height: 245px;
-  }
-  .contact-form {
-    height: 400px;
-  }
-  .txt-fields,
-  .txt-area, .btn-class {
-    padding: 10px;
-  }
-  .office {
-    height: 550px;
-    padding-top: 100px;
-    grid-template-columns: repeat(1, auto);
-  }
-  .box1,
-  .box2 {
-    width: 310px;
-  }
-}
-
-/*For Tablet  */
-@media all and (min-width: 481px) and (max-width: 768px) {
-  .contact-form {
-    height: 500px;
-  }
-  .txt-fields,
-  .txt-area, .btn-class {
-    padding: 10px;
-  }
-  .office {
-    height: 450px;
-    grid-template-columns: repeat(1, auto);
-  }
-}
-
-@media all and (min-width: 769px) and (max-width: 1024px) {
-  .office {
-    height: 460px;
-    grid-template-columns: repeat(1, auto);
-  }
-}
-
 .services-intro {
   height: 25rem;
   width: 100%;
@@ -436,35 +340,23 @@
   padding: 30px 0 30px 0;
 }
 
-/*Media Queries*/
-@media all and (max-width: 480px) {
+/*Media Queries Mobile*/
+@media (max-width: 480px) {
+  .services-intro h2 {
+    font-size: 27px;
+  }
   .services {
-    height: 1500px;
+    height: 1370px;
+    max-width: 100%;
+    font-size: 18px;
     grid-template-columns: repeat(1, auto);
   }
 }
 
-@media all and (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .services {
-    font-size: 14px;
-    height: 1500px;
+    height: 1380px;
     grid-template-columns: repeat(1, auto);
-  }
-}
-
-@media all and (min-width: 769px) and (max-width: 1024px) {
-  .services {
-    font-size: 14px;
-    height: 880px;
-    grid-template-columns: repeat(2, auto);
-  }
-}
-
-@media all and (min-width: 1025px) and (max-width: 1200px) {
-  .services {
-    font-size: 14px;
-    height: 789px;
-    grid-template-columns: repeat(2, auto);
   }
 }
 /*# sourceMappingURL=style.css.map */

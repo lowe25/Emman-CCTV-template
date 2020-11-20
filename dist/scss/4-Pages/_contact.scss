@@ -7,7 +7,6 @@
     color: $font-color;
   }
 }
-
 .contact-form {
   height: 20rem;
   display: flex;
@@ -27,7 +26,6 @@
     display: block;
   }
 }
-
 //Contacts
 .office {
   height: 327px;
@@ -56,51 +54,3 @@
 
 /*Media Query*/
 /*For Mobile*/
-@include mobile {
-  .contact-container{
-   height: 245px;
-  }
-
-  .contact-form {
-    height: 400px;
-  }
-
-  .txt-fields,
-  .txt-area,.btn-class {
-    padding: 10px;
-  }
-
-  .office {
-    height: 550px;
-    padding-top: 100px;
-    grid-template-columns: repeat(1, auto);
-  }
-
-  .box1,
-  .box2 {
-    width: 310px;
-  }
-}
-
-/*For Tablet  */
-@include tablet {
-  .contact-form {
-    height: 500px;
-  }
-  .txt-fields,
-  .txt-area,.btn-class {
-    padding: 10px;
-  }
-
-  .office {
-    height: 450px;
-    grid-template-columns: repeat(1, auto);
-  }
-}
-
-@include tablet-lg{
-  .office{
-    height: 460px;
-    grid-template-columns: repeat(1,auto);
-  }
-}

@@ -46,10 +46,5 @@
   }
 }
 
-@include mobile {
-  @include nav;
-}
-
-@include tablet {
-  @include nav;
-}
+/*Media Query Mobile*/
+@include responsive-nav(mobile-sm, screen-md);

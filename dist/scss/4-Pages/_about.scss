@@ -4,7 +4,6 @@
   justify-content: center;
   border-bottom: 2px solid black;
 }
-
 .client-heading {
   text-align: center;
   padding: 30px 0 15px 0;
@@ -36,24 +35,3 @@
 }
 
 /*Media Queries*/
-@include mobile{
-  .about-container{
-    height: 300px;
-  }
-
-  .clients-tab{
-    height: 800px;
-    grid-template-columns: repeat(1, auto);
-  }
-}
-
-@include tablet{
-  .about-container{
-    height: 400px;
-  }
-
-  .clients-tab{
-    height: 700px;
-    grid-template-columns: repeat(1, auto);
-  }
-}
