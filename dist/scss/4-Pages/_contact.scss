@@ -53,4 +53,22 @@
 }
 
 /*Media Query*/
-/*For Mobile*/
+@include mobile-device(mobile){
+.contact-form{
+  height: 500px;
+}
+.office{
+  height: 450px;
+  @include grids;
+}
+}
+
+@include tablet-device(tablet-sm, tablet-md){
+  .contact-form{
+    height: 500px;
+  }
+  .office{
+    height: 450px;
+    @include grids;
+  }
+}

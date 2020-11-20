@@ -34,7 +34,7 @@
 .clients-tab .client3, .box1,
 .box2 {
   height: 200px;
-  width: 400px;
+  width: 350px;
   border: 1px solid black;
 }
 
@@ -69,7 +69,7 @@
   .clients-tab .client2,
   .clients-tab .client3, .box1,
   .box2 {
-    width: 330px;
+    width: 350px;
     padding: 10px;
   }
 }
@@ -116,6 +116,26 @@
   }
 }
 */
+@media (max-width: 480px) {
+  .txt-fields, .txt-area {
+    width: 100%;
+    padding: 10px;
+  }
+  .btn-class {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .txt-fields, .txt-area {
+    width: 100%;
+    padding: 10px;
+  }
+  .btn-class {
+    padding: 10px;
+  }
+}
+
 /*Layouts*/
 .navbar {
   display: flex;
@@ -318,7 +338,26 @@
 }
 
 /*Media Query*/
-/*For Mobile*/
+@media (max-width: 480px) {
+  .contact-form {
+    height: 500px;
+  }
+  .office {
+    height: 450px;
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .contact-form {
+    height: 500px;
+  }
+  .office {
+    height: 450px;
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
 .services-intro {
   height: 25rem;
   width: 100%;

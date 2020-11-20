@@ -1,6 +1,6 @@
 .boxes {
   height: 200px;
-  width: 400px;
+  width: 350px;
   border: 1px solid black;
 }
 .boxes-about {
@@ -25,8 +25,9 @@
 
 @include small-screens(screen-sm, screen-md){
   .boxes{
-    width: 330px;
+    width: 350px;
     padding: 10px;
     }
 }
+
 
