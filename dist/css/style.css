@@ -17,8 +17,24 @@
 1201px and more —  Extra large screens, TV
 */
 /*Map of Screen Sizes*/
+/*
+ "mobile-sm":0px,
+  "mobile": 480px,
+  "tablet-sm": 481px,
+  "tablet-md": 768px,
+  "screen-sm": 769px,
+  "screen-xm": 812px,
+  "screen-md": 1024px,
+  "screen-lg": 1025px,
+  "screen-xl": 1270px,
+  */
 /*Media Query Diff Screens Portrait*/
+/*0 to 480px*/
+/*481 to 768px*/
+/*769 to 1024px*/
+/*1025 to 1270px*/
 /*Media Query Diff Screens Landscape*/
+/*480 to 812px*/
 /*Navbar*/
 .img-property, .clients-tab .client1,
 .clients-tab .client2,
@@ -45,7 +61,7 @@
 }
 
 /*Media Queries*/
-@media (max-width: 480px) {
+@media (max-width: 30em) {
   .boxes, .clients-tab .client1,
   .clients-tab .client2,
   .clients-tab .client3, .box1,
@@ -54,7 +70,7 @@
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 30.0625em) and (max-width: 48em) {
   .boxes, .clients-tab .client1,
   .clients-tab .client2,
   .clients-tab .client3, .box1,
@@ -64,7 +80,7 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 48.0625em) and (max-width: 64em) {
   .boxes, .clients-tab .client1,
   .clients-tab .client2,
   .clients-tab .client3, .box1,
@@ -102,21 +118,8 @@
   padding: 10px;
 }
 
-/*Media Query*
-@include mobile(mobile-md) {
-.txt-fields,.txt-area{
-  width: 100%;
-  padding: 10px;
-}
-}
-@include tablet(tablet-sm, tablet-md) {
-  .txt-fields,.txt-area{
-    width: 100%;
-    padding: 10px;
-  }
-}
-*/
-@media (max-width: 480px) {
+/*Media Query**/
+@media (max-width: 30em) {
   .txt-fields, .txt-area {
     width: 100%;
     padding: 10px;
@@ -126,7 +129,7 @@
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 30.0625em) and (max-width: 48em) {
   .txt-fields, .txt-area {
     width: 100%;
     padding: 10px;
@@ -188,7 +191,7 @@
 }
 
 /*Media Query Mobile*/
-@media (min-width: 0px) and (max-width: 1024px) {
+@media (min-width: 0px) and (max-width: 64em) {
   .toggle {
     display: flex;
   }
@@ -231,23 +234,40 @@
   background-position: center;
 }
 
-.gago {
+.intro-container {
   padding-top: 200px;
   text-align: center;
   color: #ffffff;
   font-size: 26px;
 }
 
-.gago h2, .gago p {
+.intro-container h2, .intro-container p {
   margin: 10px;
 }
 
-.gago .btn-home {
+.intro-container .btn-home {
   height: 45px;
   width: 150px;
   color: #ffffff;
   border: none;
   background-color: #020405;
+}
+
+/*Media Query*/
+@media (max-width: 30em) {
+  .intro-container {
+    font-size: 16px;
+  }
+}
+
+/*Landscape*/
+@media (min-width: 0px) and (max-width: 50.75em) and (orientation: landscape) {
+  .main {
+    height: 37.5em;
+  }
+  .intro-container {
+    font-size: 19px;
+  }
 }
 
 .about-container {
@@ -338,23 +358,36 @@
 }
 
 /*Media Query*/
-@media (max-width: 480px) {
+@media (max-width: 30em) {
+  .contact-container {
+    height: 15.625em;
+  }
   .contact-form {
-    height: 500px;
+    height: 31.25em;
   }
   .office {
-    height: 450px;
+    height: 28.125em;
     grid-template-columns: repeat(1, auto);
   }
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 30.0625em) and (max-width: 48em) {
   .contact-form {
-    height: 500px;
+    height: 31.25em;
   }
   .office {
-    height: 450px;
+    height: 28.125em;
     grid-template-columns: repeat(1, auto);
+  }
+}
+
+@media (min-width: 48.0625em) and (max-width: 64em) {
+  .contact-form {
+    height: 20.625em;
+  }
+  .office {
+    height: 13.75em;
+    grid-template-columns: repeat(2, auto);
   }
 }
 
@@ -391,12 +424,13 @@
 
 /*Media Queries*/
 /*480px*/
-@media (max-width: 480px) {
+@media (max-width: 30em) {
   .services-intro h2 {
     font-size: 27px;
   }
   .services {
-    height: 1370px;
+    /*1370px*/
+    height: 85.625em;
     max-width: 100%;
     font-size: 18px;
     grid-template-columns: repeat(1, auto);
@@ -404,25 +438,28 @@
 }
 
 /*481px to 768px*/
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 30.0625em) and (max-width: 48em) {
   .services {
-    height: 1380px;
+    /*1380px*/
+    height: 86.25em;
     grid-template-columns: repeat(1, auto);
   }
 }
 
 /*769px to 1024px*/
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 48.0625em) and (max-width: 64em) {
   .services {
-    height: 875px;
+    /*875px*/
+    height: 54.6875em;
     grid-template-columns: repeat(2, auto);
   }
 }
 
 /*1025px to 1270*/
-@media (min-width: 1025px) and (max-width: 1270px) {
+@media (min-width: 64.0625em) and (max-width: 79.375em) {
   .services {
-    height: 740px;
+    /*740px*/
+    height: 46.25em;
     grid-template-columns: repeat(2, auto);
   }
 }

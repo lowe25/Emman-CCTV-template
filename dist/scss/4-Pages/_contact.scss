@@ -54,21 +54,34 @@
 
 /*Media Query*/
 @include mobile-device(mobile){
+.contact-container{
+  height: 15.625em;
+}
 .contact-form{
-  height: 500px;
+  height: 31.25em;
 }
 .office{
-  height: 450px;
+  height: 28.125em;
   @include grids;
 }
 }
 
 @include tablet-device(tablet-sm, tablet-md){
   .contact-form{
-    height: 500px;
+    height: 31.25em;
   }
   .office{
-    height: 450px;
+    height: 28.125em;
     @include grids;
+  }
+}
+
+@include small-screens(screen-sm,screen-md){
+  .contact-form{
+    height: 20.625em;
+  }
+  .office{
+    height: 13.75em;
+    @include grid-col;
   }
 }

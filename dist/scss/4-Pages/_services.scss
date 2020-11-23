@@ -39,7 +39,8 @@
     }
   }
   .services {
-    height: 1370px;
+    /*1370px*/
+    height: 85.625em;
     max-width: 100%;
     font-size: 18px;
     @include grids;
@@ -47,25 +48,28 @@
 }
 
 /*481px to 768px*/
-@include tablet-device(tablet-sm,tablet-md){
-.services{
-  height: 1380px;
-  @include grids;
-}
+@include tablet-device(tablet-sm, tablet-md) {
+  .services {
+    /*1380px*/
+    height: 86.25em;
+    @include grids;
+  }
 }
 
 /*769px to 1024px*/
-@include small-screens(screen-sm, screen-md){
-  .services{
-    height: 875px;
+@include small-screens(screen-sm, screen-md) {
+  .services {
+    /*875px*/
+    height: 54.6875em;
     @include grid-col;
   }
 }
 
 /*1025px to 1270*/
-@include desktop-screens(screen-lg, screen-xl){
-  .services{
-    height: 740px;
+@include desktop-screens(screen-lg, screen-xl) {
+  .services {
+    /*740px*/
+    height: 46.25em;
     @include grid-col;
   }
 }

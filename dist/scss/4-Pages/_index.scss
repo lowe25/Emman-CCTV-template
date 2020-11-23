@@ -6,7 +6,7 @@ background-size: cover;
 background-position: center;
 }
 
-.gago{
+.intro-container{
     padding-top: 200px;
     text-align: center;
     color: $font-color;
@@ -19,3 +19,18 @@ background-position: center;
     }
 }
 
+/*Media Query*/
+@include mobile-device(mobile){
+    .intro-container{
+        font-size: 16px;
+    }
+}
+/*Landscape*/
+@include mobile-landscape(mobile-sm, screen-xm){
+.main{
+    height: 37.5em;
+}
+.intro-container{
+ font-size: 19px;
+}
+}

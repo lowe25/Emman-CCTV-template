@@ -18,20 +18,7 @@
 }
 
 
-/*Media Query*
-@include mobile(mobile-md) {
-.txt-fields,.txt-area{
-  width: 100%;
-  padding: 10px;
-}
-}
-@include tablet(tablet-sm, tablet-md) {
-  .txt-fields,.txt-area{
-    width: 100%;
-    padding: 10px;
-  }
-}
-*/
+/*Media Query**/
 @include mobile-device(mobile){
   .txt-fields,.txt-area{
     width: 100%;
