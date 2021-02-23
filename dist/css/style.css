@@ -44,6 +44,12 @@
   background-repeat: no-repeat;
 }
 
+.img-property2, .img-logo {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /*Components*/
 .boxes, .clients-tab .client1,
 .clients-tab .client2,
@@ -145,6 +151,7 @@
   justify-content: center;
   align-items: center;
   background-color: #132E77;
+  border-bottom: 2px solid black;
 }
 
 .navbar .company-name {
@@ -270,11 +277,36 @@
   }
 }
 
-.about-container {
-  height: 516px;
+.img-logo {
+  height: 400px;
+  width: 100%;
+  background-image: url(../img/first.jpg);
   display: flex;
   justify-content: center;
-  border-bottom: 2px solid black;
+  align-items: center;
+  text-align: center;
+}
+
+.img-logo h1 {
+  color: white;
+}
+
+.about {
+  text-align: center;
+  padding: 20px;
+}
+
+.about-container {
+  height: 100px;
+}
+
+.introduction {
+  display: flex;
+  justify-content: center;
+}
+
+.introduction .text {
+  line-height: 1.5;
 }
 
 .client-heading {
@@ -303,6 +335,20 @@
 }
 
 /*Media Queries*/
+@media (max-width: 48em) {
+  .clients-tab {
+    height: 700px;
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+@media (min-width: 48em) and (max-width: 64em) {
+  .clients-tab {
+    height: 700px;
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
 .contact-container {
   height: 12.5rem;
   background-color: #1c2833;
