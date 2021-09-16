@@ -361,7 +361,7 @@
 }
 
 .contact-form {
-  height: 20rem;
+  min-height: 25rem;
   display: flex;
   justify-content: center;
   padding-top: 20px;
@@ -406,23 +406,26 @@
 /*Media Query*/
 @media (max-width: 30em) {
   .contact-container {
-    height: 15.625em;
+    min-height: 15.625em;
   }
   .contact-form {
     height: 31.25em;
+    padding-bottom: 10px;
   }
   .office {
-    height: 28.125em;
+    min-height: 28.125em;
+    padding-top: 20px;
     grid-template-columns: repeat(1, auto);
   }
 }
 
 @media (min-width: 30.0625em) and (max-width: 48em) {
   .contact-form {
-    height: 31.25em;
+    min-height: 31.25em;
   }
   .office {
     height: 28.125em;
+    padding-top: 20px;
     grid-template-columns: repeat(1, auto);
   }
 }
@@ -432,6 +435,7 @@
     height: 20.625em;
   }
   .office {
+    padding-top: 20px;
     height: 13.75em;
     grid-template-columns: repeat(2, auto);
   }
